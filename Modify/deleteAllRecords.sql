@@ -1,0 +1,1 @@
+Delete  from cd.bookings;

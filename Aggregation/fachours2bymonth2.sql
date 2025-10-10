@@ -1,4 +1,3 @@
-
 -- https://pgexercises.com/questions/aggregates/fachoursbymonth2.html
 select facid, extract(month from starttime) as month, sum(slots) as "Total Slots"
 	from cd.bookings

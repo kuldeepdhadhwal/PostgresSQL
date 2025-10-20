@@ -1,3 +1,4 @@
+-- https://pgexercises.com/questions/aggregates/facrev.html
 select facs.name, sum(slots * case
 			when memid = 0 then facs.guestcost
 			else facs.membercost

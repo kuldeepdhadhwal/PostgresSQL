@@ -7,3 +7,6 @@ select generate_series(timestamp '2012-10-01', timestamp '2012-10-31', interval 
 -- extract the days
 Select distinct Extract('day' from starttime) as date_part from cd.bookings where starttime > '2012-08-31 00:00:00' and 
 starttime <= '2012-08-31 12:00:00'
+
+-- trim scale as int
+select trim_scale(extract(epoch from (timestamp '2012-09-02 00:00:00' - '2012-08-31 01:00:00')))::int as int;

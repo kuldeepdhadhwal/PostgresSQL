@@ -23,3 +23,17 @@ Select Team_1 as team_name, total_matches as no_of_matches_played,
     (total_matches - win_count) as no_of_losses from my_table
 order by no_of_matches_won desc,team_name desc, no_of_losses asc
 ;
+
+
+Output:
+
++--------+---------------+-----------+--------------+
+| Team_1 | total_matches | win_count | no_of_losses |
++--------+---------------+-----------+--------------+
+| India  |             2 |         2 |            0 |
+| SL     |             2 |         0 |            2 |
+| SA     |             1 |         0 |            1 |
+| Eng    |             2 |         1 |            1 |
+| Aus    |             2 |         1 |            1 |
+| NZ     |             1 |         1 |            0 |
++--------+---------------+-----------+--------------+
